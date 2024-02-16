@@ -5,7 +5,7 @@ public class Rura {
     double srednica;
     double dlugosc;
 
-    Kolano dodajKoloano;
+    Kolano przylaczoneKolano;
 
     Rura(double srednica1 , double dlugosc1){
         srednica = srednica1;
@@ -17,8 +17,8 @@ public class Rura {
         System.out.println("średnica = " + srednica);
         System.out.println("długość = " + dlugosc);
         System.out.println();
-        if (dodajKoloano != null){
-            dodajKoloano.wyswietl();
+        if (przylaczoneKolano != null){
+            przylaczoneKolano.wyswietl();
         }else {
             System.out.println("Brak połączenia");
         }

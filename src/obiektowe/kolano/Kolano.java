@@ -14,7 +14,6 @@ public class Kolano {
     Kolano(double startowaSrednica, double startowyPromien){
         srednica = startowaSrednica;
         promien = startowyPromien;
-
     }
 
 

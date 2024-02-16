@@ -8,9 +8,14 @@ public class LiczenieMain {
         Kolano kolano1 = new Kolano(30,50);
         Kolano kolano2 = new Kolano(40,60);
 
-        rura1.dodajKoloano = kolano1;
-        kolano1.dodajRura = rura2;
-        rura2.dodajKoloano = kolano2;
+
+
+
+
+        rura1.przylaczoneKolano =kolano1;
+        System.out.println(rura1.przylaczoneKolano.srednica);
+        kolano1.przylaczonaRura = rura2;
+        rura2.przylaczoneKolano = kolano2;
 
         rura1.wyswietl();
     }
