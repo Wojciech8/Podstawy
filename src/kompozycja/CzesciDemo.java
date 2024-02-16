@@ -2,6 +2,7 @@ package kompozycja;
 
 class CzesciDemo {
     public static void main(String[] args) {
+        int liczba = 10;
 
         Czesc czesc1 = new Czesc("rura");
         Czesc czesc2 = new Czesc("kolano");
@@ -10,25 +11,28 @@ class CzesciDemo {
         Czesc czesc5 = new Czesc("kolano45");
 
         Uzytkownik uzytkownik = new Uzytkownik();
+        Uzytkownik uzytkownik2 = new Uzytkownik();
+        uzytkownik2.dodajUlubioneCzesci(czesc4);
 
         uzytkownik.dodajUlubioneCzesci(czesc1);
         uzytkownik.dodajUlubioneCzesci(czesc2);
 
+
+        System.out.println("Ulubione części uzytkownika1: ");
         uzytkownik.wyswietlUlubione();
-
-
-
-
-
-
-
+        System.out.println("Ulubione części uzytkownika2: ");
+        uzytkownik2.wyswietlUlubione();
 
 
         //Zrobić klasy
         //zrobić obiekty w main
         //wstawić kilka części do ulubionych
         //wyświetlić użytkownika z ulubionymi częściami
+
+
+
     }
+
 
 
     /*
