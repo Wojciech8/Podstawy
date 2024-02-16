@@ -2,8 +2,15 @@ package kompozycja;
 
 class Czesc {
     String nazwa;
-    Czesc(String nazwa){
-        this.nazwa = nazwa;
 
+    Uzytkownik ulubioneUzytkowni;
+    Czesc(String nazwa) {
+        this.nazwa = nazwa;
     }
+
+    String wybrana(){
+
+        return nazwa;
+    }
+
 }

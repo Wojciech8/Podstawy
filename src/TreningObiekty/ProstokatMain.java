@@ -1,4 +1,4 @@
-package TreningObiekt;
+package TreningObiekty;
 
 public class ProstokatMain {
     public static void main(String[] args) {

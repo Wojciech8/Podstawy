@@ -1,4 +1,4 @@
-package TreningObiekt;
+package TreningObiekty;
 
 public class Array3dszybko {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package TreningObiekt;
+package TreningObiekty;
 
 public class Arrays3d {
     public static void main(String[] args) {

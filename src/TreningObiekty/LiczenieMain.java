@@ -1,4 +1,4 @@
-package TreningObiekt;
+package TreningObiekty;
 
 public class LiczenieMain {
     public static void main(String[] args) {

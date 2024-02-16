@@ -1,4 +1,4 @@
-package TreningObiekt;
+package TreningObiekty;
 
 public class OsobaMain {
     public static void main(String[] args) {

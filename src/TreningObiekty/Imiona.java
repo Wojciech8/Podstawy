@@ -1,4 +1,4 @@
-package TreningObiekt;
+package TreningObiekty;
 
 public class Imiona {
     int wiek;

@@ -1,4 +1,4 @@
-package TreningObiekt;
+package TreningObiekty;
 
 public class Auto {
     double cena;

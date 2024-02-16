@@ -3,17 +3,25 @@ package kompozycja;
 class CzesciDemo {
     public static void main(String[] args) {
 
-        Uzytkownik uzytkownik1 = new Uzytkownik();
-
         Czesc czesc1 = new Czesc("rura");
         Czesc czesc2 = new Czesc("kolano");
-        Czesc czesc3 = new Czesc("Kolano45");
+        Czesc czesc3 = new Czesc("flansza");
         Czesc czesc4 = new Czesc("trójnik");
-        Czesc czesc5 = new Czesc("flansza");
+        Czesc czesc5 = new Czesc("kolano45");
 
-        Czesc[] czesci = {czesc1,czesc2,czesc3,czesc4,czesc5};
+        Uzytkownik uzytkownik = new Uzytkownik();
 
-        uzytkownik1.ulubione[0] = czesci[2];
+        uzytkownik.dodajUlubioneCzesci(czesc1);
+        uzytkownik.dodajUlubioneCzesci(czesc2);
+
+        uzytkownik.wyswietlUlubione();
+
+
+
+
+
+
+
 
 
         //Zrobić klasy

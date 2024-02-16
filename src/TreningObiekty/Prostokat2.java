@@ -1,4 +1,4 @@
-package TreningObiekt;
+package TreningObiekty;
 
 public class Prostokat2 {
     int wysokosc;
