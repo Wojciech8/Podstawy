@@ -7,4 +7,11 @@ public class Czesc {
     Czesc(String nazwa){
         this.nazwa = nazwa;
     }
+
+    @Override
+    public String toString() {
+        return "Czesc{" +
+                "nazwa='" + nazwa + '\'' +
+                '}';
+    }
 }
