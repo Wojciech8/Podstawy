@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class ServiceWydatki {
 
 
-    ArrayList<Wydatek> wydatki = new ArrayList<>();
+   private ArrayList<Wydatek> wydatki = new ArrayList<>();
 
 
     public void zapiszWydatek(Wydatek wydatek){
