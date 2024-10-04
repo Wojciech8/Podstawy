@@ -15,7 +15,7 @@ public class Wydatek {
 
     @Override
     public String toString() {
-        return "Wydatek{" +
+        return "Wydatek:" +
                 "kategoria='" + kategoria + '\'' +
                 ", kwota=" + kwota +
                 ", data=" + data +

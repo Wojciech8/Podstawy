@@ -6,21 +6,16 @@ import java.util.ArrayList;
 public class ServiceWydatki {
 
 
-   private ArrayList<Wydatek> wydatki = new ArrayList<>();
+    private ArrayList<Wydatek> wydatki = new ArrayList<>();
 
 
-    public void zapiszWydatek(Wydatek wydatek){
+    public void zapiszWydatek(Wydatek wydatek) {
         wydatki.add(wydatek);
 
     }
 
-    @Override
-    public String toString() {
-        return "ServiceWydatki{" +
-                "wydatki=" + wydatki +
-                '}';
-    }
-    public  ArrayList<Wydatek> getWydatki(){
+
+    public ArrayList<Wydatek> getWydatki() {
         return wydatki;
 
     }
