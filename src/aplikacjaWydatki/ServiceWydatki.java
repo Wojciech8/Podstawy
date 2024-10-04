@@ -20,4 +20,8 @@ public class ServiceWydatki {
                 "wydatki=" + wydatki +
                 '}';
     }
+    public  ArrayList<Wydatek> getWydatki(){
+        return wydatki;
+
+    }
 }

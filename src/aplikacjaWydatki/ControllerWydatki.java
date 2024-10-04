@@ -5,31 +5,49 @@ import java.util.Scanner;
 
 public class ControllerWydatki {
 
-   private ServiceWydatki serviceWydatki = new ServiceWydatki();
-    public void wprowadzWydatek(){
+    private ServiceWydatki serviceWydatki = new ServiceWydatki();
+    public void uruchomMenu() {
+        Scanner scanner = new Scanner(System.in);
+       int wybor;
+        System.out.println("Podaj co chcesz zrobić");
+
+        do {
+
+            System.out.println("1 wprowadź wydatek,  2 pokaż wydatki  kwotę,  3 zakończ program");
+            wybor = scanner.nextInt();
+
+            switch (wybor) {
+
+                case 1:
+                    wprowadzWydatek();
+                case 2:
+                    System.out.println("Wyświetla wydatki");
+                    System.out.println(serviceWydatki.getWydatki());
+
+            }
+
+        } while (wybor != 3);
+        System.out.println("Program zakończony");
+    }
+
+
+    public void wprowadzWydatek() {
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Wpisz rodzaj wydatku");
-        String rodzajWydatku = scanner.nextLine();;
+        String rodzajWydatku = scanner.nextLine();
+        ;
         System.out.println("Wpisz kwotę wydatku");
         Double kwotaWydatku = scanner.nextDouble();
         scanner.nextLine();
         System.out.println("Wpisz datę rok - miesiąc -  dzień");
         String dataString = scanner.nextLine();
         LocalDate dataWydatku = LocalDate.parse(dataString);
-        Wydatek wydatek = new Wydatek(rodzajWydatku,kwotaWydatku,dataWydatku);
+        Wydatek wydatek = new Wydatek(rodzajWydatku, kwotaWydatku, dataWydatku);
         System.out.println("Twoja ilość wydatków to " + wydatek);
 
         serviceWydatki.zapiszWydatek(wydatek);
-        System.out.println(serviceWydatki);
-
     }
-
-    public void wprowadzWydatki(){
-        do {
-            wprowadzWydatek();
-        } while (true);
-    }
-
 
 
 

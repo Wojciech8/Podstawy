@@ -3,7 +3,7 @@ package aplikacjaWydatki;
 public class MainWydatki {
     public static void main(String[] args) {
         ControllerWydatki wydatki = new ControllerWydatki();
-        wydatki.wprowadzWydatki();
+        wydatki.uruchomMenu();
 
 
     }
